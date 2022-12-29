@@ -49,5 +49,6 @@ for index in range(1, 10):
 
 # USE 'TABULATE' TO PRINT TABLE OF DEVICES
 print("\n----- DEVICES IN TABULAR FORMAT -------------")
+# below sort using itemgetter - sort vendor first, then os, then version
 # print(tabulate(sorted(devices, key=itemgetter("vendor", "os", "version")), headers="keys"))
 print(tabulate(devices, headers="keys"))
